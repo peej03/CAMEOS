@@ -13,7 +13,7 @@ using ArgParse, JLD
 
 function parse_commandline()
 	s = ArgParseSettings()
-	@add_arg_table s begin
+	@add_arg_table! s begin
         "mark_gene"
 		    help = "1st positional argument, name of gene 'mark'"
             arg_type = String
